@@ -39,11 +39,12 @@ tierno= input ("El arroz ya esta tierno? (si/no)")
 while tierno =="no":
     agua= input("¿aun hay agua en la olla? (si/no): ")
     if agua == "no":
-        print("Agregar mas agua")
-        agua = input("¿aun hay agua en la olla? (si/no): ")
+        print("Agregar mas agua y esperar a que hierva")
+        tierno= input ("El arroz ya esta tierno? (si/no): ")
     if agua == "si":
         print("Subir el fuego y esperar a que hierva")
-        tierno= input ("El arroz ya esta tierno? (si/no): ")
+        break
+        
 if tierno =="si":
     print("Apagar el fuego")
 
